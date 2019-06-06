@@ -6,14 +6,16 @@ class Button extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick() { console.log('Hola'); }
+  handleClick() {
+    this.props.actiOnClick();
+}
 
   render() {
     return (
-      <button className="btn btn-warning btn-lg" onClick={this.handleClick}>
+      <button className="btn btn-warning btn-lg"  onClick={this.handleClick}>
         {this.props.title}
       </button>
-    );
+    ); 
   }
 }
 export default Button;
