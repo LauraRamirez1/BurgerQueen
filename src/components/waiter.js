@@ -1,10 +1,6 @@
 import React, {Component} from 'react';     
 
 class Waiter extends Component{
-    breakfast(){
-
-    }
-
     render(){
 
         return (
